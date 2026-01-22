@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Zak_cee_shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Boutique Zak_cee_shop</h1>
+    <p>Commande directement ici et paye via Mobile Money</p>
+  </header>
+
+  <main>
+    <div class="products">
+
+      <!-- Produit 1 -->
+      <div class="product">
+        <img src="chemise.jpg" alt="Chemise stylée">
+        <h3>Chemise stylée</h3>
+        <p>Prix : 15 000 XOF</p>
+      </div>
+
+      <!-- Produit 2 -->
+      <div class="product">
+        <img src="tshirt.jpg" alt="T-shirt cool">
+        <h3>T-shirt cool</h3>
+        <p>Prix : 10 000 XOF</p>
+      </div>
+
+      <!-- Produit 3 -->
+      <div class="product">
+        <img src="pantalon.jpg" alt="Pantalon stylé">
+        <h3>Pantalon stylé</h3>
+        <p>Prix : 20 000 XOF</p>
+      </div>
+
+      <!-- Produit 4 -->
+      <div class="product">
+        <img src="casquette.jpg" alt="Casquette stylée">
+        <h3>Casquette stylée</h3>
+        <p>Prix : 5 000 XOF</p>
+      </div>
+
+    </div>
+
+    <!-- Formulaire de commande -->
+    <section class="order-form">
+      <h2>Passer une commande</h2>
+      <form action="https://formspree.io/f/mvovkrlr" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Numéro Mobile :</label>
+        <input type="text" id="phone" name="phone" required placeholder="Ex : +22896981444">
+
+        <label for="product">Produit :</label>
+        <select id="product" name="product" required>
+          <option value="chemise">Chemise stylée - 15 000 XOF</option>
+          <option value="tshirt">T-shirt cool - 10 000 XOF</option>
+          <option value="pantalon">Pantalon stylé - 20 000 XOF</option>
+          <option value="casquette">Casquette stylée - 5 000 XOF</option>
+        </select>
+
+        <label for="payment">Méthode de paiement :</label>
+        <select id="payment" name="payment" required>
+          <option value="togo">TogoCell MoMo</option>
+          <option value="moov">Moov Africa</option>
+          <option value="nita">My Nita</option>
+        </select>
+
+        <label for="number">Numéro pour paiement :</label>
+        <input type="text" id="number" name="number" required placeholder="Ex : +22891606845">
+
+        <button type="submit">Envoyer la commande</button>
+      </form>
+
+      <p>Après avoir envoyé, effectuez le paiement sur le numéro choisi et confirmez-le par WhatsApp si vous voulez.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Zak_cee_shop | WhatsApp : +22896981444 / +22879168649</p>
+  </footer>
+</body>
+          </html>
